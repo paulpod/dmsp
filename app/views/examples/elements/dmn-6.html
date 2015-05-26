@@ -1,0 +1,83 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+
+    <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/application.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/selection-buttons.js"></script>
+
+
+
+{{/head}}
+
+
+
+
+{{$propositionHeader}}
+  {{>includes/govuk_navigation_searchbox}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+
+
+{{$content}}
+
+<link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<main id="content" role="main">
+  <div id="global-breadcrumb" class="header-context">
+    <nav role="navigation">
+      <ol class="group">
+   <!-- <li><a href="#">Home</a></li>
+        <li><a href="#">Driving and transport</a></li>
+        <li><a href="#">Notification</a></li> -->
+      </ol>
+    </nav>
+  </div>
+
+
+
+
+    <div class="grid-row">
+
+
+      <div class="column-two-thirds"style="width:100%">
+        <h1 class="form-title heading-xlarge">Health conditions and driving
+        </h1>
+      </div>
+    
+      
+      
+       <div class="column-two-thirds"style="width:100%">
+
+       <p><img src="/public/images/small-smiley.png"></p>
+       <p> 90% of drivers who inform us of a medical condition keep their licence.</p>
+       
+         <p>You must <a href="https://www.gov.uk/giving-up-your-driving-licence">surrender your licence to DVLA </a> if your doctor tells you to stop driving or if you do not meet the <a href="https://www.gov.uk/government/publications/at-a-glance">required standard for driving </a>because of your medical condition. </p>
+       
+         <p> Surrendering your licence voluntarily may mean you can <a href="https://www.gov.uk/reapply-driving-licence-medical-condition/when-you-can-start-driving-again">start driving again </a>sooner.</p>
+     
+     <p>Please enter your condition below</p>
+      </div>
+           
+      <div class="column-two-thirds">
+ 
+ 
+         <label class="form-label" for="full-name-f1"> Condition:<span style="word-spacing: .1em"> </span>
+        <input  type="text"><span style="word-spacing: .2em"> <h1 class="form-title heading-xlarge"></h1></label>
+        <a href="http://localhost:3000/examples/elements/dmn-7" class="button button-get-started" role="button">Enter</a>
+      </div>  
+       </form>
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

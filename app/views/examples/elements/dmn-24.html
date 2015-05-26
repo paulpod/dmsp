@@ -1,0 +1,70 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+
+    <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/application.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/selection-buttons.js"></script>
+
+
+
+{{/head}}
+
+
+
+
+{{$propositionHeader}}
+  {{>includes/govuk_navigation_searchbox}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+
+
+{{$content}}
+
+<link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<main id="content" role="main">
+  <div id="global-breadcrumb" class="header-context">
+    <nav role="navigation">
+      <ol class="group">
+   <!-- <li><a href="#">Home</a></li>
+        <li><a href="#">Driving and transport</a></li>
+        <li><a href="#">Notification</a></li> -->
+      </ol>
+    </nav>
+  </div>
+
+    <p><center><a style="font-weight:bold;">Consent to the release of medical information</center></a></p>
+    
+    <div style="border-style:solid; border-color:#BFC1C3;"><p><a style="font-weight:bold;">IMPORTANT:</a> Please read the following information carefully and enter your name and date the statement on the next page and submit this consent form with your questionnaire. We cannot proceed with enquires into your fitness to drive until we receive both completed questionnaire and consent form</p> 
+
+    <p>* We have asked you for your consent for the release of medical reports from your doctors as we may require futher information</a></p>
+
+    <p>* As part of the investigation into your fitness to drive, DVLA may require you to undergo a medical examination or some form of practical assessment. In these circumstances, those personnel involved will require your background medical details to undertake an appropriate and adequate assessment</p>
+
+    <p>* Such personnel might include Doctors, Orthoptists, paramedical staff or officers of the Secretary of state. Only information relevant to the assessment of your fitness to drive will be released</a></p>
+
+    <p>* Where the circumstance of your case appear exceptional, the relevant medical information would need to be considered by one or more of the Secretary of state's Honorary Medical Advisory Panels. The membership of these Panels conforms strictly to the principle of confidentiality</a></p></div>
+
+    <p><center><a style="font-weight:bold;">All data held by DVLA is used for internal evaluation of the quality of our services</center></a></p>
+
+  <h1 class="form-title heading-xlarge"><a href="http://localhost:3000/examples/elements/dmn-25" class="button button-get-started" role="button">Next</a>
+  </h1>
+   
+
+     
+ 
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

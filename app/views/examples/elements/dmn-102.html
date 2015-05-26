@@ -1,0 +1,131 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+
+    <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/application.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/selection-buttons.js"></script>
+
+
+
+{{/head}}
+
+
+
+
+{{$propositionHeader}}
+  {{>includes/govuk_navigation_searchbox}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+
+
+{{$content}}
+
+<link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<main id="content" role="main">
+  <div id="global-breadcrumb" class="header-context">
+    <nav role="navigation">
+      <ol class="group">
+          <!-- <li><a href="#">Home</a></li>
+        <li><a href="#">Driving and transport</a></li>
+        <li><a href="#">Notification</a></li> -->
+      </ol>
+    </nav>
+  </div>
+
+
+
+
+    <div class="grid-row">
+
+
+      <div class="column-two-thirds"style="width:80">
+        <p style="font-weight:bold;">Question 2:
+        </p>
+      </div>
+           
+         <div class="column-two-thirds"> 
+           <p>How does your medical condition restrict you from driving?</p>
+         </div>
+
+    <div class="column-two-thirds">
+    <fieldset class="inline">
+    <label class="block-label" for="radio-inline-1">
+      <input id="radio-inline-1" name="radio-inline-group" value="Vision" type="radio">
+     Vision
+     </div>
+  </fieldset>
+  <div class="column-two-thirds">
+  <fieldset class="inline">
+    <label class="block-label" for="radio-inline-2">
+      <input id="radio-inline-2" name="radio-inline-group" value="upper-Body-movement" type="radio">
+      Upper Body movement
+    </div>
+  </fieldset>
+  <div class="column-two-thirds">
+  <fieldset class="inline">
+    <label class="block-label" for="radio-inline-3">
+      <input id="radio-inline-3" name="radio-inline-group" value="upper-Body-movement" type="radio">
+      Upper Body movement and vision
+    </div>
+  </fieldset>
+  <div class="column-two-thirds">
+  <fieldset class="inline">
+    <label class="block-label" for="radio-inline-4">
+      <input id="radio-inline-4" name="radio-inline-group" value="lower-Body-movement" type="radio">
+      Lower body movement
+      </div>
+    </fieldset>
+    <div class="column-two-thirds">
+  <fieldset class="inline">
+    <label class="block-label" for="radio-inline-5">
+      <input id="radio-inline-5" name="radio-inline-group" value="lower-Body-movement" type="radio">
+      Lower body movement and vision
+      </div>
+    </fieldset>
+      <div class="column-two-thirds">
+    <fieldset class="inline">
+    <label class="block-label" for="radio-inline-6">
+      <input id="radio-inline-6" name="radio-inline-group" value="Vision" type="radio">
+     Lower and Upper body movement
+     </div>
+  </fieldset>
+  <div class="column-two-thirds">
+    <fieldset class="inline">
+    <label class="block-label" for="radio-inline-7">
+      <input id="radio-inline-7" name="radio-inline-group" value="Vision" type="radio">
+     Lower and Upper body movement and vision
+     </div>
+  </fieldset>
+      <div class="column-two-thirds">
+  <fieldset class="inline">
+    <label class="block-label" for="radio-inline-8">
+      <input id="radio-inline-8" name="radio-inline-group" value="No physical impairment" type="radio">
+      No physical impairment
+  </fieldset>
+      </div>  
+        
+        <div class="column-two-thirds">
+
+         <h1 class="form-title heading-xlarge"><a href="http://localhost:3000/examples/elements/dmn-103" class="button button-get-started" role="button">Next</a>
+        </h1>
+        </div>
+      </div>
+      
+   </div>   
+ 
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

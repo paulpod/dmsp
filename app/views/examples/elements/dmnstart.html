@@ -1,0 +1,95 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+
+    <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/application.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/selection-buttons.js"></script>
+
+
+
+{{/head}}
+
+
+
+
+{{$propositionHeader}}
+  {{>includes/govuk_navigation_searchbox}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+
+
+{{$content}}
+
+<link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<main id="content" role="main">
+  <div id="global-breadcrumb" class="header-context">
+    <nav role="navigation">
+      <ol class="group">
+        <li><a href="https://www.gov.uk/">Home</a></li>
+        <li><a href="https://www.gov.uk/browse/driving">Driving and transport</a></li>
+        <li><a href="https://www.gov.uk/browse/driving/disability-health-condition">Driving with a disability or a health condition</a></li>
+      </ol>
+    </nav>
+  </div>
+
+
+
+
+      <div class="grid-row">
+
+
+      <div class="column-two-thirds">
+        <h1 class="form-title heading-large">Drivers Medical Notification
+        </h1>
+
+
+      
+        <p><img src="/public/images/small-smiley.png"></p> 
+        <p>90% of drivers who inform us of a medical condition keep their licence.</p>
+      
+      
+          <p>Use this service to:</p>
+          <div class="column-two-thirds"style="width:80%">
+           <li>Notify DVLA of a new or continuing medical condition</li>
+          <li>Check the progress of an existing notification</li>
+          </div> 
+      </div>
+      
+
+      <div class="column-third" style="margin-bottom:0.75em">    
+          <div class="grid-row" style="border-bottom:10px solid #005ea5">
+      </div>
+         <p class="form-title heading-small">Driving with a disability or a health condition</p>
+      
+         <ul style="font-size:0.85em"> <a href="https://www.gov.uk/health-conditions-and-driving">Health Conditions and driving</a></p>
+         <p><a href="https://www.gov.uk/reapply-driving-licence-medical-condition">Reapply for a driving licence following a medical condition</a></p>
+         <p><a href="https://www.gov.uk/browse/driving">Driving and Transport</a></p>
+        </ul>
+
+      </div>
+      
+  </div> 
+  <br>
+        
+      <form class="get-started" action="/g" style="margin-top:1.5em">
+
+        <a href="dmn-0" class="button get-started" role="button">Online Notification</a>
+      </form> 
+</main>
+
+<!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}

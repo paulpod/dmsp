@@ -1,0 +1,175 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+
+    <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/application.js"></script>
+
+    <script type="text/javascript" src="/public/javascripts/selection-buttons.js"></script>
+
+
+
+{{/head}}
+
+
+
+
+{{$propositionHeader}}
+  {{>includes/govuk_navigation_searchbox}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+
+
+{{$content}}
+
+<link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+<main id="content" role="main">
+  <div id="global-breadcrumb" class="header-context">
+    <nav role="navigation">
+      <ol class="group">
+        <li><a href="https://www.gov.uk/">Home</a></li>
+      </ol>
+    </nav>
+  </div>
+
+
+
+
+    <div class="grid-row">
+
+
+      <div class="column-two-thirds"style="width:100%">
+        <h1 class="form-title heading-xlarge">DVLA: Drivers Medical Notification
+      </div>
+    </div>
+      
+      <div class="column-two-third">
+       
+         <label class="form-label" for="full-name-f1">Please enter your Driver Number:<span style="word-spacing: .1em"> </span>
+       <!-- <input class="form-control" id="full-name-f1" style="" ="text"><span style="word-spacing: .2em"> </span><a href=>Where to find this</a></label> -->
+       <label class="form-label" for="ni-number">
+   
+    <span class="form-hint">It'll be on your Drivers Licence. For Example, JONES197653JB5AE</span>
+  </label>
+  <input class="form-control" id="ni-number" type="text">
+
+         <label class="form-label" for="full-name-f1">Please enter your Post Code:<span style="word-spacing: 2.0em"> </span>     
+       <!--<input class="form-control" id="full-name-f1" style="text"><span style="word-spacing: .2em"> </span><a href=>Where to find this</a></label> -->
+       <label class="form-label" for="ni-number">
+  
+    <span class="form-hint">It'll be on any letter. For example, SA99 1BN.</span>
+  </label>
+  <input class="form-control" id="ni-number" type="text">
+
+        <label class="form-label" for="full-name-f1">Please enter your N.I. Number:<span style="word-spacing: 1.1em"> </span>     
+        <label class="form-label" for="ni-number">
+  
+    <span class="form-hint">It'll be on your last payslip or benefits letter. For example, JH 21 90 0A.</span>
+  </label>
+  <input class="form-control" id="ni-number" type="text">
+        <!--<input class="form-control" id="full-name-f1" style="text"><span style="word-spacing: .2em"> </span><a href=>Where to find this</a></label>-->
+      </div>
+
+           <div ><p>Please click the button to find out which Categorys from your drivers licence you need to enter.</p>
+
+
+<button onclick="myFunction1()">Category 1</button>
+
+<p id="demo1"></p>
+<button onclick="myFunction2()">Category 2</button>
+
+<p id="demo2"></p>
+        <p>
+        <script>
+function myFunction1() {
+    var x = Math.floor((Math.random() * 16) + 1);
+    document.getElementById("demo1").innerHTML = x;
+}
+</script>
+<label class="form-label" for="ni-number">
+    
+    <span class="form-hint">It'll be on your Drivers Licence. For example, A,B,fklnpq.</span>
+  </label>
+        
+            <select name="ctl00$MainContent$ExpiryMonthDropDown" id="MainContent_ExpiryMonthDropDown">
+            <option selected="selected" value="-">Category</option>
+            <option value="AM">AM</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A">A</option>
+            <option value="B1">B1</option>
+            <option value="B">B</option>
+            <option value="C1">C1</option>
+            <option value="C">C</option>
+            <option value="D1">D1</option>
+            <option value="D">D</option>
+            <option value="BE">BE</option>
+            <option value="C1E">C1E</option>
+            <option value="CE">CE</option>
+            <option value="D1E">D1E</option>
+            <option value="DE">DE</option>
+            <option value="fklnpq">fklnpq</option>
+          </select>
+
+          
+                <script>
+function myFunction2() {
+    var x = Math.floor((Math.random() * 16) + 1);
+    document.getElementById("demo2").innerHTML = x;
+}
+</script>
+
+           <select name="ctl00$MainContent$ExpiryMonthDropDown" id="MainContent_ExpiryMonthDropDown">
+            <option selected="selected" value="-">Category</option>
+            <option value="AM">AM</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A">A</option>
+            <option value="B1">B1</option>
+            <option value="B">B</option>
+            <option value="C1">C1</option>
+            <option value="C">C</option>
+            <option value="D1">D1</option>
+            <option value="D">D</option>
+            <option value="BE">BE</option>
+            <option value="C1E">C1E</option>
+            <option value="CE">CE</option>
+            <option value="D1E">D1E</option>
+            <option value="DE">DE</option>
+            <option value="fklnpq">fklnpq</option>
+            
+      </select>
+    
+  
+      </p>
+    </div> 
+
+   <div class="dep-permission-group">
+              <label><input type="checkbox" id="dwpPermission" name="dwpPermission" value="1">
+              By ticking this box, you are providing the Driver and Vehicle Licensing Agency (DVLA) with your consent to check your personal details including your National Insurance number with the Department for Work and Pensions and Her Majesty's Revenue and Customs to help verify your identity. If you do not wish to tick this box, the DVLA will be unable to verify your identity and you will not be able to use this service. For more information on how the DVLA will use your information and the alternative ways of accessing this service please see our privacy policy.
+              </label>
+              </div> 
+
+
+        
+          <h1 class="form-title heading-xlarge"><a href="http://localhost:3000/examples/elements/dmn-2" class="button button-get-started" role="button">Next</a>
+        </h1>
+    
+
+        </div>
+      
+ 
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
